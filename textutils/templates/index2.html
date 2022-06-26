@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+<!--mei ek masoom se website hu anam, jiska naam hai template.-->
+<!--you can watch {{name}} videos from {{video}}-->
+
+<h1> Welcome to the text Analyzer Enter Your text below </h1>
+<form action='/analyze' method='get'>
+<textarea name='text' style='width: 1230px; height: 130px;'></textarea> <br>
+    <input type="checkbox" name="removepunc"> Remove Punctuations<br>
+    <input type="checkbox" name="fullcaps">UPPERCASE<br>
+    <input type="checkbox" name="newlineremover">New Line Remover<br>
+    <input type="checkbox" name="extraspaceremover">Extra Spaces Remover<br>
+    <button type="submit">Analyze Text</button>
+
+
+
+</form>
+</body>
+</html>
