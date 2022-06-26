@@ -43,7 +43,7 @@ def analyze(request):
     if(extraspaceremover=='on'):
         analyzed = ''
         for index, char in enumerate(djtext):
-            if not (djtext[index] == ' ' and djtext[index+1] == ' '):
+            if not (djtext[index]==' ' and djtext[index+1]==' '):
                 analyzed = analyzed + char
         params = {'purpose': 'Remove Extra Spaces', 'analyzed_text': analyzed}
 

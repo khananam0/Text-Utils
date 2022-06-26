@@ -10,7 +10,7 @@
 
     <title>Text Utils</title>
   </head>
-  <body>
+  <body style="background-color:rgb(203,232,251)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">TextUtils.in</a>
@@ -46,7 +46,10 @@
         <form action='/analyze' method='post'> {% csrf_token %}
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Enter your text here and let text utils do the magic </label>
-              <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="9"></textarea>
+              <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="9" style="border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;"></textarea>
+<!--                  <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="9"></textarea>-->
             </div>
         <div class="form-check form-switch">
             <input class="form-check-input" name="removepunc" type="checkbox" id="flexSwitchCheckChecked1">
